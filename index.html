@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V Gas Station</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="layer">
+        <div class="layer-left">
+          <div class="item-box">
+            <img src="assets/Benzin-icon.svg" alt="Benzin" />
+            <div class="box-txt benzin">
+              <h2>Benzin</h2>
+              <p>23</p>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="assets/Diesel-icon.svg" alt="Diesel" />
+            <div class="box-txt diesel">
+              <h2>Diesel</h2>
+              <p>12</p>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="assets/Strom-icon.svg" alt="Strom" />
+            <div class="box-txt strom">
+              <h2>Strom</h2>
+              <p>20</p>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="assets/gas-icon.svg" alt="Gas" />
+            <div class="box-txt gas">
+              <h2>Gas</h2>
+              <p>21</p>
+            </div>
+          </div>
+        </div>
+        <div class="layer-right">
+          <div class="close-button" onclick="closeAction()">X</div>
+
+          <div class="process">
+            <div class="value-con">
+              <p class="label">Betrag</p>
+              <p class="value" id="betrag">0,00</p>
+              <p class="label">$</p>
+            </div>
+            <div class="value-con">
+              <p class="label">Ausgabe</p>
+              <p class="value" id="liter">0,00</p>
+              <p class="label">Liter</p>
+            </div>
+            <div class="value-con">
+              <p class="label">Preis/Liter</p>
+              <p class="value" id="price-per-liter">0,00</p>
+              <p class="label">$</p>
+            </div>
+          </div>
+          <p class="bottom-label" id="start-stop-btn" onclick="togglePump()">Tankvorgang Starten</p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer2-left">
+          <div class="item-two" onclick="selectFuel('benzin', 5.00)">
+            <img src="assets/benzin-value.svg" alt="Benzin-Value" id="benzin-img" />
+            <hr id="benzin-hr" />
+          </div>
+          <div class="item-two" onclick="selectFuel('diesel', 6.00)">
+            <img src="assets/Diesel-value.svg" alt="Diesel-Value" id="diesel-img" />
+            <hr id="diesel-hr" />
+          </div>
+          <div class="item-two" onclick="selectFuel('strom', 4.00)">
+            <img src="assets/Strom-value.svg" alt="Strom-Value" id="strom-img" />
+            <hr id="strom-hr" />
+          </div>
+          <div class="item-two" onclick="selectFuel('gas', 0.00)">
+            <img src="assets/gas-value.svg" alt="Gas-Value" id="gas-img" />
+            <hr id="gas-hr" />
+          </div>
+        </div>
+        <div class="layer2-right">
+          <div class="detail-board">
+            <div class="board-con">
+              <div class="board-line">
+                <img src="assets/Benzin-icon.svg" alt="Benzin" />
+                <h2>Benzin</h2>
+                <p class="Benzin-Preis">5,00 $</p>
+              </div>
+              <div class="board-line">
+                <img src="assets/Diesel-icon.svg" alt="Diesel" />
+                <h2>Diesel</h2>
+                <p class="Diesel-Preis">6,00 $</p>
+              </div>
+              <div class="board-line">
+                <img src="assets/Strom-icon.svg" alt="Strom" />
+                <h2>Strom</h2>
+                <p class="Strom-Preis">4,00 $</p>
+              </div>
+              <div class="board-line">
+                <img src="assets/gas-icon.svg" alt="Gas" />
+                <h2>Gas</h2>
+                <p class="Gas-Preis">0,00 $</p>
+              </div>
+            </div>
+            <div class="columns-sec">
+              <div class="column"></div>
+              <div class="column"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-layer">
+        <img src="assets/bottom-bg.png" alt="Bottom Background" />
+      </div>
+    </div>
+
+    <div id="payment-popup" class="popup hidden">
+      <div class="popup-content">
+        <h2>Bezahlen</h2>
+        <button onclick="pay('cash')">Barzahlung</button>
+        <button onclick="pay('card')">Kartenzahlung</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
