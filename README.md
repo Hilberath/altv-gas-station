@@ -12,8 +12,8 @@ a Gas Station UI.
 
 ### Features
 
-- [x] Basic design of the Gas Station in HTML, CSS and JS
-- [ ] Refueling process starts by clicking on the nozzle
+- [x] Basic design of the gas station in HTML, CSS and JS
+- [ ] Refueling process of a vehicle
 - [ ] Payment process with cash or card
 
 ## Deutsch
@@ -28,8 +28,8 @@ Eine Tankstellen UI
 
 ### Funktionen
 
-- [x] Grunddesign der Tankstelle in HTML, CSS und JS
-- [ ] Tankvorgang startet mit klicken auf der Zapfpistole
+- [x] Grundlegendes Design der Tankstelle in HTML, CSS und JS
+- [ ] Betankungsvorgang eines Fahrzeugs
 - [ ] Bezahlvorgang mit Bargeld oder Karte
 
 ## Screenshots
